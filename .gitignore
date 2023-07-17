@@ -18,7 +18,7 @@ target/
 *.iws
 *.iml
 *.ipr
-C:\Users\user\AirtimeVtuApi\src\main\resources\secret.properties
+secret.properties
 
 
 ### NetBeans ###
