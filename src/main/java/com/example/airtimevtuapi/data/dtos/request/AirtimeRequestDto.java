@@ -9,8 +9,11 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Details {
+public class AirtimeRequestDto {
 
-    private String phoneNumber;
+    private Long id;
     private BigDecimal amount;
+    private String phoneNumber;
+
+
 }

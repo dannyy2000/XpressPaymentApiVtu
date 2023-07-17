@@ -7,11 +7,11 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AirtimePurchaseResponse {
+public class AirtimePaymentResponse {
 
      private String requestId;
      private String referenceId;
      private String responseCode;
      private String responseMessage;
-     private String data;
+     private Object data;
 }

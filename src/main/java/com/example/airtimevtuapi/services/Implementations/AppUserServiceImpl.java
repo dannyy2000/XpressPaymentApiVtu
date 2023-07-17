@@ -2,12 +2,11 @@ package com.example.airtimevtuapi.services.Implementations;
 
 import com.example.airtimevtuapi.data.models.AppUser;
 import com.example.airtimevtuapi.data.repositories.AppUserRepository;
-import com.example.airtimevtuapi.exceptions.CustomException;
 import com.example.airtimevtuapi.services.Interfaces.AppUserService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import static com.example.airtimevtuapi.common.Message.EMAIL_NOT_FOUND;
+import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -27,5 +26,12 @@ public class AppUserServiceImpl implements AppUserService {
     public AppUser findUserByEmail(String email) {
         return appUserRepository.findUserByEmail(email);
     }
+
+    @Override
+    public AppUser findUserById(Long id) {
+        return appUserRepository.findUserById(id);
+    }
+
+
     // This method retrieves an AppUser object from the appUserRepository based on the provided email.
 }

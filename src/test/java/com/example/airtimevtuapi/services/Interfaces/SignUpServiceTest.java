@@ -16,7 +16,7 @@ class SignUpServiceTest {
 
     @Test
     public void requestSignUp() {
-        String email = "gugnobarde@gufum.com";
+        String email = "yurzuvokni@gufum.com";
         var response = service.requestSignUp(email);
         assertThat(response.isSuccess()).isTrue();
     }

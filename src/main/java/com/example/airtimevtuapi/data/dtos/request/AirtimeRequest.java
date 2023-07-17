@@ -9,7 +9,7 @@ import lombok.*;
 @Builder
 public class AirtimeRequest {
 
-    private int requestId;
+    private String requestId;
     private String uniqueCode;
     private Details details;
 }
