@@ -20,7 +20,7 @@ C:\Users\user\AirtimeVtuApi\src\main\resources\secret.properties
 *.iws
 *.iml
 *.ipr
-secret.properties
+src/main/resources/secrets.properties
 
 
 
@@ -36,6 +36,6 @@ build/
 
 ### VS Code ###
 .vscode/
-src/main/resources/secret.properties
-secret.properties
+src/main/resources/secrets.properties
+src/main/resources/secrets.properties
 
