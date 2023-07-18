@@ -16,7 +16,7 @@ class SignUpServiceTest {
 
     @Test
     public void requestSignUp() {
-        String email = "yurzuvokni@gufum.com";
+        String email = "tatrulufye@gufum.com";
         var response = service.requestSignUp(email);
         assertThat(response.isSuccess()).isTrue();
     }
@@ -26,7 +26,7 @@ class SignUpServiceTest {
     @Test
     void completeSignup() {
         SignUpRequest request = new SignUpRequest();
-        request.setEmail("fetriyeknu@gufum.com");
+        request.setEmail("lurtadeknu@gufum.com");
         request.setFirstName("Tomi");
         request.setLastName("Akinsanya");
         request.setPassword("Akinsanya2020");

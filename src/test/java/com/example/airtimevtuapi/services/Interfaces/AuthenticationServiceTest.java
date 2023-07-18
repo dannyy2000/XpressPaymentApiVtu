@@ -19,8 +19,8 @@ class AuthenticationServiceTest {
     @BeforeEach
      void testComplete(){
         loginRequest = new LoginRequest (
-           "rurdonopsoo@gufum.com",
-                "Akinsan2020"
+           "lurtadeknu@gufum.com",
+                "Akinsanya2020"
         );
     }
 
