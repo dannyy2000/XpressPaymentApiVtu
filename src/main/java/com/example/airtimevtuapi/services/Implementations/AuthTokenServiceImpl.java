@@ -5,6 +5,7 @@ import com.example.airtimevtuapi.data.repositories.AuthTokenRepository;
 import com.example.airtimevtuapi.exceptions.TokenValidationException;
 import com.example.airtimevtuapi.services.Interfaces.AuthTokenService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,7 @@ import static com.example.airtimevtuapi.common.Message.AUTH_TOKEN_NOT_VALID;
 
 @Service
 @Slf4j
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class AuthTokenServiceImpl implements AuthTokenService {
 
     private final AuthTokenRepository authTokenRepository;

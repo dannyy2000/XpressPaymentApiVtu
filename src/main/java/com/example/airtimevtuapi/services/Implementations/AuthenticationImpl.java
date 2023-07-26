@@ -21,7 +21,7 @@ public class AuthenticationImpl implements AuthenticationService {
     private final AuthenticationManager manager;
     private final JwtGenerator generator;
     @Override
-    public TokenResponse authenticate(@NotNull LoginRequest request) {
+    public TokenResponse authenticate(LoginRequest request) {
         try {
             // Authenticates the user using the provided email and password
             Authentication authentication = manager.authenticate (

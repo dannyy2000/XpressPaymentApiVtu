@@ -27,7 +27,7 @@ public class JwtGenerator {
 
         return Jwts.builder()
                 .setSubject(username)
-                .setIssuer("Trust worthy Bank")
+                .setIssuer("Xpress Accunt")
                 .setIssuedAt(currentDate)
                 .setExpiration(expirationDate)
                 .signWith(key)

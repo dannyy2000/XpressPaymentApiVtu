@@ -29,7 +29,7 @@ public class SecurityConfig{
 
 
     private final String[] allowedEndpoints = {
-          "/api/v1/auth/getToken","/api/v1/auth/confirm", "/api/v1/auth/register", "/api/v1/auth/authenticate","/airtime",
+          "/api/v1/auth/getToken","/api/v1/auth/confirm", "/api/v1/auth/register", "/api/v1/auth/authenticate",
 //
     };
 

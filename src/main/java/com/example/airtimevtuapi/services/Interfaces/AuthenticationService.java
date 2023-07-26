@@ -6,5 +6,5 @@ import jakarta.validation.constraints.NotNull;
 
 public interface AuthenticationService {
 
-    TokenResponse authenticate (@NotNull LoginRequest request);
+    TokenResponse authenticate ( LoginRequest request);
 }

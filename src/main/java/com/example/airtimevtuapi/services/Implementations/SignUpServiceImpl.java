@@ -30,7 +30,7 @@ import static com.example.airtimevtuapi.utils.AppUtils.generateToken;
 import static com.example.airtimevtuapi.utils.ResponseUtils.*;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Slf4j
 public class SignUpServiceImpl implements SignUpService {
     private final AppUserService service;
@@ -44,7 +44,7 @@ public class SignUpServiceImpl implements SignUpService {
     private final PasswordEncoder encoder;
 
     @Override
-    public ApiResponse requestSignUp(@Email String email) {
+    public ApiResponse requestSignUp(String email) {
         // Checks if the user already exists with the provided email
         AppUser checkUser = service.findUserByEmail(email);
 

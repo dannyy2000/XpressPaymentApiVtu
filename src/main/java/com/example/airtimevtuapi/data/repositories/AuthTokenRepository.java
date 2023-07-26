@@ -8,9 +8,6 @@ import java.util.Optional;
 public interface AuthTokenRepository extends JpaRepository<AuthToken,Long> {
 
     Optional <AuthToken> findAuthByToken(String token);
-    //Optional <AuthToken> findAuthTokenByToken(String token);
-
-    Optional <AuthToken> findByEmailAndToken(String email, String token);
 
 
     Optional<AuthToken> findByToken(String token);

@@ -4,12 +4,13 @@ import com.example.airtimevtuapi.data.models.AppUser;
 import com.example.airtimevtuapi.data.repositories.AppUserRepository;
 import com.example.airtimevtuapi.services.Interfaces.AppUserService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class AppUserServiceImpl implements AppUserService {
 
     private final AppUserRepository appUserRepository;

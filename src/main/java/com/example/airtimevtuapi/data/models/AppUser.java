@@ -2,6 +2,7 @@ package com.example.airtimevtuapi.data.models;
 
 import com.example.airtimevtuapi.enums.Role;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 
@@ -24,6 +25,7 @@ public class AppUser {
     @Enumerated(EnumType.STRING)
     private List<Role> roles;
     private String password;
+    @Email(message = "Invalid email address")
     private String email;
     @CreatedDate
     private LocalDateTime createdAt;

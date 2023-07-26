@@ -5,12 +5,13 @@ import com.example.airtimevtuapi.data.models.Transaction;
 import com.example.airtimevtuapi.data.repositories.TransactionRepository;
 import com.example.airtimevtuapi.services.Interfaces.TransactionService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class TransactionServiceImp implements TransactionService {
 
     private final TransactionRepository transactionRepository;
